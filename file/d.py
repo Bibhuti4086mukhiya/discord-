@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 # Define the intents you need
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.typing = True  # You can adjust this based on your needs
 
 # Create a bot instance with intents
@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
-    
+
 # Command: Extract Messages
 @bot.command()
 async def extract_messages(ctx, channel: discord.TextChannel):
@@ -22,4 +22,4 @@ async def extract_messages(ctx, channel: discord.TextChannel):
             file.write(f"{message.author.name}: {message.content}\n")
 
 # Run the bot
-bot.run('MTE0MDI0MDEwMDAwNjA1MTk1MQ.G9RXOZ.thG2SYkeidmCSml_jMGDDxm3JsavV1ahQyW-_0')
+bot.run('MTE0MDI0MDEwMDAwNjA1MTk1MQ.G4dAgk.tPNtmShwy2C3ayV9BIhaeI4unsf2nWY6ptcRsY')
