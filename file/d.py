@@ -22,4 +22,4 @@ async def extract_messages(ctx, channel: discord.TextChannel):
             file.write(f"{message.author.name}: {message.content}\n")
 
 # Run the bot
-bot.run('MTE0MDI0MDEwMDAwNjA1MTk1MQ.G4dAgk.tPNtmShwy2C3ayV9BIhaeI4unsf2nWY6ptcRsY')
+bot.run('')

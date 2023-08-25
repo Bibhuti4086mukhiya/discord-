@@ -19,4 +19,4 @@ async def fetch_messages(ctx):
     for message in messages:
         print(f'Message from {message.author}: {message.content}')
 
-bot.run('MTE0MDI0MDEwMDAwNjA1MTk1MQ.GK_aYX.w0uBUeVXHUugd31cXrbxrv-EB3822boVXIjarQ')
+bot.run('')
