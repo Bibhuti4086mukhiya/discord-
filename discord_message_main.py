@@ -17,8 +17,9 @@ def discord_message(channel_id):
     }
     response=requests.get(f"https://discord.com/api/v9/channels/{channel_id}/messages", headers=headers)
     jsson=json.loads(response.text)
-    for value in jsson:
-        print(value,"\n")
+    # for value in jsson:
+    #     print(value,"\n")
+    return jsson
 
 
 # In[3]:
